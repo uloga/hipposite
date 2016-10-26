@@ -1,1 +1,0 @@
-### Hippo CMS site example.
