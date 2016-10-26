@@ -1,0 +1,23 @@
+<div class="row" ng-tarnsclude>
+  
+  <!-- product title start -->
+  <h5 class="padding-v-15 text-blue text-capitalize">{{product.name}}</h5>
+  <!-- product title end -->
+  
+  <!-- product thumbnail start -->
+  <img ng-src="{{product.image}}"/>
+  <!-- product thumbnail end -->
+  
+  <!-- product description start -->
+  <p class="padding-v-15 text-black" ng-bind-html="product.description"></p>
+  <!-- product description start -->
+  
+  <!-- product categories start -->
+  <p>
+    <span class="label blue margin-right" ng-repeat="category in product.categories">
+      {{category}}
+    </span>
+  </p>
+  <!-- product categories end -->
+  
+</div>

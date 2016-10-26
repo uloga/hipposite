@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="HippoProducts">
+<head>
+<meta charset="utf-8">
+<title>Hippo CMS - Products | Angular.js Example</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- ===== CSS START ==== -->
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800" rel="stylesheet">
+<link href="https://decorator.io/modulr/webroot/css/modulr.min.css" rel="stylesheet">
+<link href="css/theme.css" rel="stylesheet">
+<!-- ===== CSS END ==== -->
+<!-- github btn - you can remove this. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<!-- ANGULAR START -->   
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+<script src="https://code.angularjs.org/1.5.8/angular-resource.min.js"></script>
+<script src="https://code.angularjs.org/1.5.8/angular-sanitize.min.js"></script>
+<script src="https://code.angularjs.org/1.5.8/angular-route.min.js"></script>
+<!-- ANGULAR END -->
+<!-- App Start -->
+<script src="app/app.js"></script>
+<script src="app/service/products.js"></script>
+<script src="app/controller/products.js"></script>
+<script src="app/directive/products.js"></script>
+<!-- App End -->
+</head>
+<body>
+  
+  <div class="wrapper960 center padding-10 padding-bottom-40">
+    
+    <h4 class="padding-v-30 padding-bottom-20">Hippo CMS : Top Products 
+      <a ng-href="#/" class="margin-left pull-right"><i class="fa fa-arrow-left"></i> Go Home</a>
+    </h4>
+    
+    <div class="qt padding-10 text-blue relative">
+      Unofficial Hippo CMS angular.js site example.
+      <div class="git">
+        <!-- github star button, you can remove this and everything above. -->
+        <a class="github-button" href="https://github.com/uloga/hipposite" data-style="mega" data-count-href="/uloga/hipposite/stargazers" data-count-api="/repos/uloga/hipposite#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star uloga/hipposite on GitHub">Star</a>
+        <a class="github-button" href="https://github.com/uloga/hipposite/fork" data-style="mega" data-count-href="/uloga/hipposite/network" data-count-api="/repos/uloga/hipposite#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork uloga/hipposite on GitHub">Fork</a>
+      </div>
+    </div>
+    
+    <!-- Ng View Start -->
+    <div ng-view></div>
+    <!-- Ng View End -->
+  </div>
+  
+</body>
+</html>

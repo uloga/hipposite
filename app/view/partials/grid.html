@@ -1,0 +1,32 @@
+<div class="grid grid-{{grid}}" ng-transcrlude>
+  
+  <!-- product loop start -->
+  <div ng-repeat="(key, value) in products">
+    
+    <!-- product thumbnail start -->
+    <img ng-src="{{value.smallThumbnail}}" alt="{{value.title}}" class="small-tmb"/>
+    <!-- product thumbnail end -->
+   
+    <!-- product display name start -->
+    <p class="padding-10 text-center h75">
+      {{value.displayName}}
+    </p>
+    <!-- product display name end -->
+    
+    <!-- product price start -->
+    <p class="padding-5 text-center text-strong text-blue">{{value.price | currency:"$"}}</p>
+    <!-- product price end -->
+    
+    <!-- product button start -->
+    <p class="padding-10 text-center">
+      <products-button 
+        product-name="{{value.productLink | apiPath}}">
+        View Details
+      </products-button>
+    </p>
+    <!-- product button end -->
+    
+  </div>
+  <!-- product loop end -->
+  
+</div>
