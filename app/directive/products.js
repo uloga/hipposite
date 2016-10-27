@@ -41,7 +41,7 @@
        * @per-page 
        * you can pass how many items you want
        * your grid to display per page;
-       * <products-grid per-page="*count"></products-grid>a
+       * <products-grid per-page="*count"></products-grid>
        */
 
       var perPage = attr.perPage || 10;
